@@ -79,7 +79,7 @@ def append_row_to_csv_new(new_row):
     print("\tCode saved, not checked")
 
 def handle_captcha():
-    api = ocrspace.API(api_key='K88118401188957', language=ocrspace.Language.English, engine=ocrspace.Engine.ENGINE_2) # type: ignore
+    api = ocrspace.API(api_key='YOUR API KEY', language=ocrspace.Language.English, engine=ocrspace.Engine.ENGINE_2) # type: ignore
     ocr_txt = (api.ocr_file(open('cap.png', 'rb')))
     return ocr_txt
 
